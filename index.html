@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>DEZLING APP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="img/assets/favicon.png" rel="icon" type="image/png"> 
+        <link href="css/init.css" rel="stylesheet" type="text/css">
+        <link href="css/ion-icons.min.css" rel="stylesheet" type="text/css">
+        <link href="fonts/linea-icons.css" rel="stylesheet" type="text/css">
+        <link href="css/theme.css" rel="stylesheet" type="text/css">  
+        <link href="css/custom.css" rel="stylesheet" type="text/css"> 
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700%7CHind:600,500,400,300" rel="stylesheet" type="text/css">
+        <link href="css/colors/default.css" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>   
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js" />
+    <script data-require="angular.js@1.3.x" src="https://code.angularjs.org/1.3.15/angular.js" data-semver="1.3.15"></script>
+    <script data-require="jquery@2.1.3" data-semver="2.1.3" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script src="https://use.fontawesome.com/e595033614.js"></script>
+
+    <style type="text/css">
+        .owl-prev {
+            position: absolute;
+            top: 35%;
+            left: 10px;
+            display: block !important;
+            border:0px solid black;
+            margin-left: 0
+        }
+
+        .owl-next {
+            position: absolute;
+            top: 35%;
+            right: 15px;
+            margin-right: 0px;
+            display: block !important;
+            border:0px solid black;
+        }
+        @media (max-width: 380px) {
+            .owl-carousel{
+                padding: 35px !important;
+            }
+            .subscription input {
+                width: 300px;
+                border-top-right-radius: 100px;
+                border-bottom-right-radius: 100px;
+            }
+        }
+    </style>
+    </head>
+    <body ng-app="dezlingWeb" ng-init="get()" ng-controller="myCtrl" data-fade-in="true">       
+         
+        <div class="pre-loader"><div></div></div>
+        
+        <!-- Start Header -->
+        <nav class="navbar" data-fullwidth="true" data-menu-style="transparent" data-animation="hiding"><!-- Styles: light, dark, transparent | Animation: hiding, shrink -->
+            <div class="container">
+                
+                <div class="navbar-header">
+                    <div class="container">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">                    </span>
+                            <span class="icon-bar top-bar"></span>
+                            <span class="icon-bar middle-bar"></span>
+                            <span class="icon-bar bottom-bar"></span>
+                        </button>
+                        <a class="navbar-brand to-top" href="/"><img src="img/assets/logo-light.png" class="logo-light" alt="#"><img src="img/assets/logo-dark.png" class="logo-dark" alt="#"></a> 
+                    </div>
+                </div>
+
+                <div id="navbar" class="navbar-collapse collapse">
+                    <div class="container">
+                        <ul class="nav navbar-nav menu-right">                            
+                            
+                            <!-- Each section must have corresponding ID ( #hero -> id="hero" ) -->
+                            <li><a href="#hero-app">Inicio</a></li>
+                            <li><a href="#about">Info</a></li>
+                            <li><a href="#features">Funciones</a></li>
+                            <li><a href="#contact">Contacto</a></li>
+                            <li class="dropdown megamenu vos">
+                                
+                             
+                            <li class="nav-separator"></li>
+                            <li  class="nav-icon"><a href="http://facebook.com/dezlingapp" target="_blank"><i class="ion-social-facebook"></i></a></li>
+                            <li  class="nav-icon"><a href="http://instagram.com/dezlingapp" target="_blank"><i class="ion-social-instagram"></i></a></li>
+                        </ul>
+                        
+                    </div>
+                </div> 
+            </div>
+        </nav>
+        <!-- End Header -->
+        
+        <!-- Hero Slider -->
+        <section id="hero-app" class="hero-fullscreen parallax" data-overlay-dark="7">
+            
+            <div class="background-image">
+                <img src="img/backgrounds/s-1.jpg" alt="img">
+            </div>
+            
+            <div class="container">  
+                <div class="row"> 
+                    <div class=" text-center"> 
+                        <h1 style="
+                                font-size: 80px;
+                                letter-spacing: -6px;
+                                line-height: 1;
+                                margin: 0;
+                                color: white;" class="hero-big-title" data-reveal="bottom">Dezling App</h1>
+            <ul data-reveal="top">
+                        <p class="lead mt20 mb50" data-reveal="bottom"><span><br></span></p>
+                        
+                    </div>
+                </div> 
+            </div>
+            
+        </section>
+        <!-- End Hero Slider --> 
+        
+        <!-- About Product -->
+        <section id="about" class="pt100 pb60">
+            <div class="container">                      
+                <div class="row">    
+
+                    <div class="col-md-11 mr-auto app-hero">   
+                        
+                        <div class="app-carousel owl-carousel owl-theme dark-pagination">
+                            <div><img src="img/devices/1.png" class="mr-auto" alt="#"/></div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-md-12 text-center pb20">   
+                        <h2 data-reveal="bottom">"The online shopping tour"</h2>
+                        <p class="lead mt20" data-reveal="top">Es una aplicación que permite encontrar de manera rápida y sencilla la información centralizada sobre las tiendas, locales gastronómicos, shoppings, multitiendas y supermercados a nivel país.</p>
+                    </div>  
+                    
+                    <div class="row">
+                    
+                        <div class="col-md-offset-3 col-md-3 text-right feature-center" data-reveal="bottom">
+                            <i class="ion-social-android-outline size-4x color"></i>
+                            <i class="ion-social-android-outline back-icon"></i> 
+                            <div class="feature-left-content">
+                                <h4>Android</h4>
+                                <p><a href="https://play.google.com/store/apps?hl=es" class="btn btn-sm btn-ghost">INSTALAR</a></p> 
+                            </div> 
+                        </div>
+                        <div class="col-md-3 text-left feature-center" data-reveal="bottom">
+                            <i class="ion-social-apple-outline  size-4x color"></i>
+                            <i class="ion-social-apple-outline  back-icon"></i> 
+                            <div class="feature-left-content">
+                                <h4>iOS</h4>
+                                <p><a href="https://www.appstore.com" class="btn btn-sm btn-ghost">INSTALAR</a></p> 
+                            </div> 
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- End About Product -->
+
+        <!-- CUENTA REGRESIVA -->
+        <section id="elements-countdown" class="pt100 pb100 bg-grey" data-overlay-dark="8">
+            <div class="container"> 
+                <div class="row">        
+
+                    <div class="col-md-12 text-center">
+                        <h1><strong>Cuenta Regresiva</strong></h1>
+                        <p class="lead">Para el Lanzamiento Oficial de la App</p>
+                    </div>
+
+                    <div class="col-sm-12 text-center">
+                        <div data-date="April 30, 2018 09:00:00" id="countdown-timer">
+                            <div><h2 id="months"></h2><h6>Meses</h6></div> 
+                            <div><h2 id="days"></h2><h6>Días</h6></div> 
+                            <div><h2 id="hours"></h2><h6>Horas</h6></div> 
+                            <div><h2 id="minutes"></h2><h6>Minutos</h6></div> 
+                            <div><h2 id="seconds"></h2><h6>Segundos</h6></div>
+                      
+                </div>
+            </div>
+        </section>
+        <!-- FIN CUENTA REGRESIVA -->
+
+    
+        <!-- FUNCIONES -->
+        <section id="features" class="pt100 pb90" >
+            <div class="container">              
+                
+                <div class="row">
+                    <div class="col-md-12 text-center">   
+                        <h2 data-reveal="bottom">Funciones de la Aplicación</h2>
+                        <p class="lead mt20" data-reveal="top">EN LA APP PODRÁS: </p>
+                    </div>
+                </div>
+                
+                <div class="row vertical-align"> 
+                   
+                    <div class="col-md-4">
+                        <div class="app-feature-right col-sm-6 col-md-12" data-reveal="left">
+                            <i class="icon-ecommerce-bag color size-3x"></i>
+                            <i class="icon-ecommerce-bag back-icon"></i>
+                            <div class="feature-left-content">
+                                <h4>Promociones</h4>
+                                <p>Visualizar promociones en tiempo real.</p>
+                            </div> 
+                        </div>
+                        <div class="app-feature-right col-sm-6 col-md-12" data-reveal="left">
+                            <i class="icon-basic-heart color size-3x"></i>
+                            <i class="icon-basic-heart back-icon"></i>
+                            <div class="feature-left-content">
+                                <h4>Favoritos</h4>
+                                <p>Marcar como favoritos a los comercios adheridos de tu preferencia.</p>
+                            </div> 
+                        </div>
+
+                        <div class="app-feature-right col-sm-6 col-md-12" data-reveal="left">
+                            <i class="icon-basic-map color size-3x"></i>
+                            <i class="icon-basic-map back-icon"></i>
+                            <div class="feature-left-content">
+                                <h4>Mapa Virtual</h4>
+                                <p>Acceder al mapa virtual de los complejos adheridos en cada categoría.</p>
+                            </div> 
+                        </div>
+
+                                                <div class="app-feature-right col-sm-6 col-md-12" data-reveal="left">
+                            <i class="icon-basic-todo-txt color size-3x"></i>
+                            <i class="icon-basic-todo-txt back-icon"></i>
+                            <div class="feature-left-content">
+                                <h4>Lista de Compras</h4>
+                                <p>Elaborar tus listas de compras, guardarlas y editarlas de acuerdo a tus necesidades.</p>
+                            </div> 
+                        </div>
+
+
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <img src="img/devices/d2.png" class="img-responsive mr-auto" alt="#" data-reveal="bottom" />
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="app-feature-left col-sm-6 col-md-12" data-reveal="right">
+                            <i class="icon-basic-geolocalize-01 color size-3x"></i>
+                            <i class="icon-basic-geolocalize-01 back-icon"></i>
+                            <div class="feature-left-content">
+                                <h4>Check-In</h4>
+                                <p>Hacer check-in por visitas diarias en los comercios adheridos.</p>
+                            </div> 
+                        </div>
+                        <div class="app-feature-left col-sm-6 col-md-12" data-reveal="right">
+                            <i class="icon-ecommerce-sales color size-3x"></i>
+                            <i class="icon-ecommerce-sales back-icon"></i>
+                            <div class="feature-left-content">
+                                <h4>Puntos</h4>
+                                <p>Acumular puntos de check-in para acceder a beneficios exclusivos.</p>
+                            </div> 
+                        </div>
+
+                        <div class="app-feature-left col-sm-6 col-md-12" data-reveal="right">
+                            <i class="icon-basic-anticlockwise color size-3x"></i>
+                            <i class="icon-basic-anticlockwise back-icon"></i>
+                            <div class="feature-left-content">
+                                <h4>Horarios</h4>
+                                <p>Consultar horarios y días de atención.</p>
+                            </div> 
+                        </div>
+
+                        <div class="app-feature-left col-sm-6 col-md-12" data-reveal="right">
+                            <i class="icon-basic-geolocalize-05 color size-3x"></i>
+                            <i class="icon-basic-geolocalize-05 back-icon"></i>
+                            <div class="feature-left-content">
+                                <h4>Mapa de Promociones</h4>
+                                <p>Visualizar a través de nuestro mapa personalizado de Google Maps las promociones que se encuentran cerca tuyo.</p>
+                            </div> 
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- FIN FUNCIONES -->
+
+        <!-- Seccion Clientes -->
+            <!-- SHOPPINGS -->
+            <section class="pt70 pb70">
+                <div class="container"> 
+                    <h4 class="bold mb30 text-center"><strong>Shoppings y Locales</strong></h4>
+                    <div class="row text-center" >
+                        <p ng-show="cargando == true" class="text-center">Cargando ..</p>                       
+                        <data-owl-carousel class="owl-carousel" data-options="{nav: true, pagination: false, rewind : true,
+                            responsive: {
+                                0: {
+                                    items: 2
+                                },
+                                600: {
+                                    items: 5
+                                },
+                                1200: {
+                                    items: 6
+                                },
+                                1800: {
+                                    items: 8
+                                }
+                            },autoplay : true, autoplayTimeout: 1500, loop: false, free: true, }">
+                          <div owl-carousel-item="" ng-repeat="item in comercios | filter:{categoria:'shoppings'} " class="item">
+                            <a><img title="{{ item.nombre }}" style="width: 110px !important; height: auto !important" src="{{ item.avatar || 'img/assets/favicon.png' }}" alt="{{ item.nombre }}"></a>
+                          </div>
+                        </data-owl-carousel>
+                    </div>
+                </div>
+            </section>
+            <!-- MULTIMARCAS -->
+            <section class="">
+                <div class="container"> 
+                    <h4 class="bold mb30 text-center"><strong>Multitiendas</strong></h4>
+                    <div class="row text-center" >
+                        <p ng-show="cargando == true" class="text-center">Cargando ..</p>                              
+                        <data-owl-carousel class="owl-carousel" data-options="{nav: true, pagination: false, rewind : true,
+                            responsive: {
+                                0: {
+                                    items: 2
+                                },
+                                600: {
+                                    items: 5
+                                },
+                                1200: {
+                                    items: 6
+                                },
+                                1800: {
+                                    items: 8
+                                }
+                            },autoplay : true, autoplayTimeout: 1500, loop: false, free: true, }">
+                          <div owl-carousel-item="" ng-repeat="item in comercios | filter:{categoria:'multimarcas'}" class="item">
+                            <a><img title="{{ item.nombre }}" style="width: 110px !important; height: auto !important; margin-right: 0px; margin: 10px;" src="{{ item.avatar || 'img/assets/favicon.png'}}" alt="{{ item.nombre }}"></a>
+                          </div>
+                        </data-owl-carousel>
+                    </div>
+                </div>
+            </section>
+            <!-- SUPERMERCADOS -->
+            <section class="pt70 pb70">
+                <div class="container"> 
+                    <h4 class="bold mb30 text-center"><strong>Supermercados</strong></h4>
+                    <div class="row text-center" >
+                        <p ng-show="cargando == true" class="text-center">Cargando ..</p>                             
+                        <data-owl-carousel class="owl-carousel" data-options="{nav: true, pagination: false, rewind : true,
+                            responsive: {
+                                0: {
+                                    items: 2
+                                },
+                                600: {
+                                    items: 5
+                                },
+                                1200: {
+                                    items: 6
+                                },
+                                1800: {
+                                    items: 8
+                                }
+                            },autoplay : true, autoplayTimeout: 1500, loop: false, free: true, }">
+                          <div owl-carousel-item="" ng-repeat="item in comercios | filter:{categoria:'supermercados'}" class="item">
+                            <a><img title="{{ item.nombre }}" style="width: 100px !important; height: auto !important" src="{{ item.avatar || 'img/assets/favicon.png'}}" alt="{{ item.nombre }}"></a>
+                          </div>
+                        </data-owl-carousel>
+                    </div>
+                </div>
+            </section>
+        
+        
+    
+        <!-- Subscription Form -->
+        <section class="parallax pt100 pb100" data-overlay-dark="8">
+            <!--
+            <div class="background-image">
+                <img src="img/backgrounds/s-6.jpg" alt="#">
+            </div>
+            -->
+            <div class="container">
+                <div class="row text-center">
+                    
+                    <div class="col-md-12 text-center pb20" data-reveal="top">
+                        <h2 data-reveal="bottom">Suscribite a nuestras novedades</h2>
+                        <p class="lead mt20" data-reveal="top"></p>
+                    </div>
+
+
+                    <div class="col-md-12">
+                        <div class="subscription">
+                            <form action="php/subscribe-mailchimp.php" method="post" class="mr-auto" id="subscribe-form">
+                                <div class="form-validation alert"></div>
+                                <div class="subs-container">
+                                    <input type="email" name="email" id="subscribe-form-email" class="bg-white" placeholder="E-MAIL"/>
+                                    <button class="btn btn-primary subscription-submit" data-loading-text="Loading...">SUSCRIBIRME</button>
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Subscription Form -->
+        
+
+        
+
+
+
+ <!-- Accordion -->
+        <section id="elements-accordion" class="pt120 pb120 bg-grey">
+            <div class="container"> 
+                <div class="row">
+                    
+                    <div class="col-md-12 text-center mt40 pb20">
+                        <h2><strong>Preguntas Frecuentes</strong></h2>
+                        
+                    </div>
+
+                    <div class="col-md-12 pt20 pb20">
+                    
+                    
+                        <div class="col-sm-6 feature-left" data-reveal="right">
+                            <i class="ion-ios-personadd-outline color size-3x"></i>
+                            <i class="ion-ios-personadd-outline back-icon"></i>
+                            <div class="feature-left-content">
+                                <h4>¿Es necesario crear una cuenta para acceder a todas las funciones de la aplicación?</h4>
+                                <p style="text-align: justify;">Sí, es necesario, solo podrás acceder a todas las funciones disponibles dentro de la aplicación al ingresar con un usuario, de lo contrario solo podrás acceder a un contenido limitado y lastimosamente tu experiencia no será la misma. Te recomendamos registrarte, creando un usuario con tu e-mail o directamente con tu cuenta de Facebook, para no perderte de todos los beneficios exclusivos que tenemos para vos. <br></p>
+                            </div> 
+                        </div>
+                        <div class="col-sm-6 feature-left" data-reveal="right">
+                            <i class="ion-ios-pricetags-outline color size-3x"></i>
+                            <i class="ion-ios-pricetags-outline back-icon"></i>
+                            <div class="feature-left-content">
+                                <h4>¿Cuáles son los beneficios que poseo? ¿Cómo accedo a ellos?</h4>
+                                <p style="text-align: justify;">Cada comercio posee beneficios exclusivos a los cuales podrás acceder según tus puntos acumulados. En la app podrás encontrar los beneficios dentro del perfil de cada comercio, haciendo click en el botón “Beneficios”. Podrás verificar tus puntos acumulados por comercio en tu perfil, una vez que alcances los puntos correspondientes a un beneficio aparecerá en verde el botón “canjear”.  </p>
+                            </div> 
+                        </div>
+                        <div class="col-sm-6 feature-left" data-reveal="right">
+                            <i class="ion-ios-location-outline color size-3x"></i>
+                            <i class="ion-ios-location-outline   back-icon"></i>
+                            <div class="feature-left-content">
+                                <h4>¿Qué es el check-in? ¿Para qué sirve? ¿Cómo lo realizo?</h4>
+                                <p style="text-align: justify;">El check-in es la función utilizada para registrar visitas diarias en los comercios adheridos, cada visita acumula 1 punto por día, que luego puede ser canjeado por beneficios exclusivos.Para realizar un check-in, debes encontrarte físicamente en el comercio donde deseas acumular puntos, el sistema arrojará un listado de posibles comercios según tu ubicación, solo debes seleccionar el comercio deseado y seguir los pasos. Te recordamos que solo podrás realizar un check-in por día por comercio adherido al club de puntos, si deseas realizar más de un check-in en el mismo día pero en distintos comercios, debes tener en cuenta que el sistema te pedirá que esperes al menos 15 minutos hasta que este nuevamente disponible la función.</p>
+                            </div> 
+                        </div>
+                        <div class="col-sm-6 feature-left" data-reveal="right">
+                            <i class="icon-ecommerce-ticket color size-3x"></i>
+                            <i class="icon-ecommerce-ticket back-icon"></i>
+                            <div class="feature-left-content">
+                                <h4>¿Cómo canjeo mis puntos por beneficios?</h4>
+                                <p style="text-align: justify;">Primero debes asegurarte que tengas habilitada la opción “canjear” en el beneficio al que queres acceder. Puedes hacerlo ingresando a tu perfil en la app y accediendo a la opción “Puntos” donde podrás ver tu acumulado de puntos en un listado por comercio. Si el botón “canjear” ya se encuentra habilitado, te recomendamos esperar a realizar el canje una vez que estés físicamente en el comercio, para evitar inconvenientes. Inmediatamente al canjear y aceptar las condiciones se genera un cupón que tendrá tus datos, la información del beneficio, código de cupón, fecha y hora de canje. Te recordamos que solo dispones de 4 (cuatro) horas para reclamar tu beneficio. Si este cupón no es utilizado dentro del tiempo establecido, perderás el beneficio y tu cantidad de puntos volverá a 0 (cero).
+                                </p>
+                            </div> 
+                        </div>
+
+                        <div class="col-sm-6 feature-left" data-reveal="right">
+                            <i class="ion-ios-reload color size-3x"></i>
+                            <i class="ion-ios-reload back-icon"></i>
+                            <div class="feature-left-content">
+                                <h4>Canjee mis puntos pero lo hice por error, ¿puedo revertirlo?</h4>
+                                <p style="text-align: justify;">Una vez que realizaste un canje, el sistema arroja por default la pregunta “¿Estás seguro de realizar el canje?” El usuario tiene la opción de aceptar o rechazar. La aceptación de esta pregunta implica una responsabilidad única y exclusiva del usuario de decidir acceder finalmente al beneficio o no y deslinda a la empresa DEZLING S.A. de cualquier responsabilidad. Si esto no fue lo que te sucedió te recomendamos escribirnos a info@dezling.com donde responderemos en la brevedad posible.
+ 								</p>
+                            </div> 
+                        </div>
+
+                        <div class="col-sm-6 feature-left" data-reveal="right">
+                            <i class="icon-basic-smartphone color size-3x"></i>
+                            <i class="icon-basic-smartphone back-icon"></i>
+                            <div class="feature-left-content">
+                                <h4>¿Puedo iniciar sesión desde varios dispositivos en simultáneo?</h4>
+                                <p style="text-align: justify;">Si puedes hacerlo. La aplicación es compatible con el sistema operativo Android y iOS, solo debes abrir la aplicación desde el dispositivo seleccionado e ingresar a tu usuario con normalidad, todos tus datos quedarán guardados en tu perfil por lo que el contenido no debería variar. Por seguridad y privacidad te recomendamos hacerlo siempre desde un mismo dispositivo. Si tienes algún inconveniente para iniciar sesión, no dudes en contactarnos escribiendo un mail a info@dezling.com donde responderemos en la brevedad posible.
+ 								</p>
+                            </div> 
+                        </div>
+                    
+                    
+                    </div>
+        </section>
+        <!-- End Accordion -->
+     
+ <!-- Contact Form -->    
+        <section id="contact" class="pt120 pb100">
+            <div class="container">
+                <div class="row">     
+                    
+                    <div class="col-md-12 text-center pb20">   
+                        <h2 data-reveal="bottom">¿Cómo podemos ayudarte?</h2>
+                        <p class="lead" data-reveal="top">Contactá con nuestro equipo de soporte</p>
+                    </div>
+                    
+                    <div class="col-md-8 col-md-offset-2 contact box-style" data-reveal="bottom"> 
+                        <div id="message-info"></div>
+                        <!-- Forms can be functional only on server. Upload to your server when testing. -->
+                        <form id="contactform" method="post"> 
+                            
+                            <div class="col-sm-12">
+                                <input name="name" id="name" placeholder="Nombre y Apellido *"/>
+                            </div>
+                            <div class="col-sm-6">
+                                <input name="email" id="email" placeholder="E-mail *"/>
+                            </div>
+                            <div class="col-sm-6">
+                                <input name="phone" id="phone" placeholder="Número de Teléfono"/>
+                            </div>
+                            <div class="col-sm-12"> 
+                                <textarea name="message" rows="9" id="message" placeholder="Mensaje *"></textarea>
+                            </div>
+                            <div class="col-md-12" data-reveal="top">
+                                <input type="submit" class="submit btn btn-lg btn-primary" id="submit" value="ENVIAR"/>
+                            </div>
+                            
+                        </form>
+                    </div>  
+
+                </div>
+            </div>
+        </section>
+        <!-- End Contact Form -->
+
+        <!-- Start Footer -->
+        <footer id="footer" class="footer style-1 dark">
+
+            <div class="row hidden-xs hidden-sm" style="margin-right: 0px">
+                <div class="col-md-4">
+                    <i class="icon-basic-message-multiple color size-2x"></i>
+                    <div class="feature-left-content">
+                        <p data-reveal="left" style="font-size: 17px"> <strong> Contactos</strong></p>
+                        <p data-reveal="left">Tel: +595 981 264 502 / +595 994 606 120 </p>
+                        <a style="font-size: 17px" target="_blank" href="mailto:info@dezling.com"><p data-reveal="left" style="font-size: 17px"> info@dezling.com </p></a>
+                        <p data-reveal="left"> 
+
+                        <li><a href="https://www.facebook.com/dezlingapp" target="_blank" class="color"><i style="font-size: 24px" class="ion-social-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/dezlingapp" target="_blank" class="color"><i style="font-size: 24px" class="ion-social-instagram"></i></a></li> </p>
+                    </div> 
+                </div>
+                <div class="col-md-4" feature-left" data-reveal="left">
+                    <a href="/" data-reveal="bottom"><img src="img/dezling-05.png" alt="#" class="mr-auto img-responsive"></a>
+                </div>
+                <div class="col-md-4">
+                     <i class="icon-basic-clock color size-2x"></i>
+                    <div class="feature-left-content">
+                        <p data-reveal="left" style="font-size: 17px"> <strong> Horario de Atención</strong></p>
+                        <p data-reveal="left" style="font-size: 17px">Lunes a Jueves de 09:00 a 17:00 Hs.</p>
+                        <p data-reveal="left" style="font-size: 17px">Viernes de 9:00 a 14:00 Hs.</p>
+                    </div> 
+                </div>
+            </div>
+            
+            
+            <div class="row hidden-md hidden-lg" style="margin-right: 0px">
+                <div class="col-sm-12" feature-left" data-reveal="left">
+                    <a href="/" data-reveal="bottom"><img src="img/dezling-05.png" alt="#" class="mr-auto img-responsive"></a>
+                </div>
+                <div class="col-sm-12" style="margin: 40px 0px">
+                     <i class="icon-basic-clock color size-2x"></i>
+                    <div class="feature-left-content">
+                        <p data-reveal="left" style="font-size: 17px"> <strong> Horario de Atención</strong></p>
+                        <p data-reveal="left" style="font-size: 17px">Lunes a Jueves de 09:00 a 17:00 Hs.</p>
+                        <p data-reveal="left" style="font-size: 17px">Viernes de 9:00 a 14:00 Hs.</p>
+                    </div> 
+                </div>
+                <div class="col-sm-12">
+                    <i class="icon-basic-message-multiple color size-2x"></i>
+                    <div class="feature-left-content">
+                        <p data-reveal="left" style="font-size: 17px"> <strong> Contactos</strong></p>
+                        <p data-reveal="left">Tel: +595 981 264 502 / +595 994 606 120 </p>
+                        <a style="font-size: 17px" target="_blank" href="mailto:info@dezling.com"><p data-reveal="left" style="font-size: 17px"> info@dezling.com </p></a>
+                        <p data-reveal="left"> 
+
+                        <li><a href="https://www.facebook.com/dezlingapp" target="_blank" class="color"><i style="font-size: 24px" class="ion-social-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/dezlingapp" target="_blank" class="color"><i style="font-size: 24px" class="ion-social-instagram"></i></a></li> </p>
+                    </div> 
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 40px">
+                <a href="http://tecnodesign.com.py" target="_blank"><p data-reveal="left">  Desarrollado por <strong> TECNODESIGN</strong> </p></a>
+            </div>
+            
+
+            
+
+            
+            <!-- Back To Top Button -->
+            <span><a class="scroll-top" data-reveal="right"><i class="ion-chevron-up"></i></a></span>
+            
+        </footer>
+        <!-- End Footer -->
+        
+        <script src="js/jquery.js"></script>
+        <script src="js/init.js"></script>
+        <script src="js/scripts.js"></script> 
+<script>
+var app = angular.module('dezlingWeb', []);
+app.controller('myCtrl', function($scope, $http) {
+
+    $scope.get = function(){
+        $scope.comercios = [];
+        $scope.cargando = true;
+        $http.get("https://dezling-405c6.firebaseio.com/categorias.json")
+        .then(function mySuccess(response) {
+            // Shoppings
+            angular.forEach(response.data.centros_comerciales.comercios,function (detalles,key) {
+                console.log(detalles.perfil.nombre +" tiene " + detalles.perfil.online)
+                if(detalles.perfil.online == true){
+                    if(detalles.locales){
+                            $scope.comercios.push({avatar:detalles.perfil.avatar,nombre:detalles.perfil.nombre, categoria:'shoppings'});
+
+                        angular.forEach(detalles.locales,function (locales) {
+                            if(locales.perfil.online == true){
+                                $scope.comercios.push({avatar:locales.perfil.avatar,nombre:locales.perfil.nombre, categoria:'shoppings'});
+                            }
+                        })
+                    }else{
+                        if(detalles.perfil.online == true){
+                            $scope.comercios.push({avatar:detalles.perfil.avatar,nombre:detalles.perfil.nombre, categoria:'shoppings'});
+                        }
+                    }
+                }
+            });
+            // Multimarcas
+            angular.forEach(response.data.multimarcas.comercios,function (detalles,key) {
+                if(detalles.perfil.online == true){
+                    $scope.comercios.push({avatar:detalles.perfil.avatar,nombre:detalles.perfil.nombre, categoria:'multimarcas'});
+                }
+            });
+            // Supermercados
+            angular.forEach(response.data.supermercados.comercios,function (detalles,key) {
+                if(detalles.perfil.online == true){
+                    $scope.comercios.push({avatar:detalles.perfil.avatar,nombre:detalles.perfil.nombre, categoria:'supermercados'});
+                }
+            });
+            $scope.cargando = false;
+            $scope.locales_cantidad = $scope.comercios.length;
+            $scope.random = function() {
+                return 0.5 - Math.random();
+            }
+        }, function myError(response) {
+            $scope.comercios = response.statusText;
+        });
+    }
+}).directive("owlCarousel", function() {
+    return {
+        restrict: 'E',
+        transclude: false,
+        link: function (scope) {
+            scope.initCarousel = function(element) {
+              // provide any default options you want
+                var defaultOptions = {
+                };
+                var customOptions = scope.$eval($(element).attr('data-options'));
+                // combine the two options objects
+                for(var key in customOptions) {
+                    defaultOptions[key] = customOptions[key];
+                }
+                // init carousel
+                $(element).owlCarousel(defaultOptions);
+            };
+        }
+    };
+})
+.directive('owlCarouselItem', [function() {
+    return {
+        restrict: 'A',
+        transclude: false,
+        link: function(scope, element) {
+          // wait for the last item in the ng-repeat then call init
+            if(scope.$last) {
+                scope.initCarousel(element.parent());
+            }
+            $( ".owl-prev").html('<i class="fa fa-angle-left" aria-hidden="true"></i>');
+            $( ".owl-next").html('<i class="fa fa-angle-right" aria-hidden="true"></i>');
+        }
+    };
+}]);
+</script>  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-99283677-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-99283677-1');
+</script>
+
+        
+    </body>
+</html>
